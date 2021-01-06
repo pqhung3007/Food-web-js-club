@@ -41,6 +41,9 @@ h2 {
     align-items: center;
     text-align: center;
     font-weight: bold;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-duration: 1.5s;
 }
 .col-12.japanese {
     align-items: center;
@@ -49,9 +52,27 @@ h2 {
     text-align: center;
     flex-direction: column;
     font-weight: bold;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-duration: 1.5s;
     
 }
 h1 {
     color: white;
     margin-top: 50px;
+}
+.container > .row {
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,100px,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        
+    }
 }
